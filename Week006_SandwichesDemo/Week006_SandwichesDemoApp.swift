@@ -11,7 +11,7 @@ import SwiftUI
 struct Week006_SandwichesDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SandwichesListView(viewModel: SandwichesListViewModel())
         }
     }
 }

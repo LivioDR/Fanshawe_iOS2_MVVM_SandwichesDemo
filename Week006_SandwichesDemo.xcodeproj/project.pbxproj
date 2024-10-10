@@ -32,8 +32,8 @@
 		F8ACE3102CB86A3100F74740 = {
 			isa = PBXGroup;
 			children = (
-				F8ACE31B2CB86A3100F74740 /* Week006_SandwichesDemo */,
 				F8ACE31A2CB86A3100F74740 /* Products */,
+				F8ACE31B2CB86A3100F74740 /* Week006_SandwichesDemo */,
 			);
 			sourceTree = "<group>";
 		};

@@ -19,11 +19,9 @@ struct SandwichDetail: View {
                 .font(.title)
                 .padding(.all)
             Spacer()
-            Image(systemName: "takeoutbag.and.cup.and.straw.fill")
+            Image(sandwich.imageName)
                 .resizable()
                 .aspectRatio(contentMode: zoomed ? .fill : .fit)
-                .padding(.horizontal)
-                .foregroundStyle(.green)
                 .onTapGesture {
                     withAnimation {
                         zoomed.toggle()
@@ -47,5 +45,5 @@ struct SandwichDetail: View {
 }
 
 #Preview {
-    SandwichDetail(sandwich: SandwichStore.testSandwichStore.sandwiches[4])
+    SandwichDetail(sandwich: SandwichStore.testSandwichStore.sandwiches[1])
 }

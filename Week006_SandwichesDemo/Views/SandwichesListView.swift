@@ -30,7 +30,7 @@ struct SandwichesListView: View {
                 }
                 .navigationTitle(viewModel.navTitle)
                 .searchable(text: $viewModel.searchTerm, placement: .navigationBarDrawer(displayMode: .automatic), prompt: "Search for sandwiches")
-                .onChange(of: viewModel.searchTerm) { oldValue, newValue in
+                .onChange(of: viewModel.searchTerm) {
                     viewModel.filterSearchResults()
                 }
                 .animation(.easeInOut, value: viewModel.searchTerm)

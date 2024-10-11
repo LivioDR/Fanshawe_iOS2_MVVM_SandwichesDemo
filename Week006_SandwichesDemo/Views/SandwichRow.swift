@@ -12,9 +12,9 @@ struct SandwichRow: View {
     var body: some View {
         NavigationLink(destination: SandwichDetail(sandwich: sandwich)) {
             HStack {
-                Image(systemName: "takeoutbag.and.cup.and.straw.fill")
+                Image(sandwich.thumbnailName)
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .frame(width: 50, height: 50)
                 
@@ -39,5 +39,5 @@ struct SandwichRow: View {
 }
 
 #Preview {
-    SandwichRow(sandwich: SandwichStore.testSandwichStore.sandwiches[0])
+    SandwichRow(sandwich: SandwichStore.testSandwichStore.sandwiches[5])
 }
